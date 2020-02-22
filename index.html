@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Instaspot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords"
+        content="hireseek, hiring, jobs, job search, indeed, internship, co-op, grad jobs, entry level jobs, student jobs, international jobs">
+    <meta name="description"
+        content="Find entry-level and professional jobs around the world through Indeed job search engine">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyDrowbuo0rfGCAmuAh7GwE8SCUs9f0jEeQ"></script>
+    <script src="js/map.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <img src="img/logo.png">
+    </div>
+    <div id="search">
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="text" class="form-control" id="address" placeholder="address">
+                <input type="text" class="form-control" id="radius" placeholder="radius">
+            </div>
+
+            <input type="button" class="btn btn-primary btn-xs-block" value="Search" onclick="codeAddress()">
+            <input type="button" class="btn btn-info btn-xs-block" value="Geolocate" onclick="geoLocate()">
+        </form>
+
+
+
+    </div>
+    <div id="map-canvas">
+    </div>
+</body>
+
+</html>
